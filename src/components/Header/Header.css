@@ -1,0 +1,43 @@
+.status-bar {
+    height: 3.5rem;
+    background-color: #ffffff;
+    width: 100vw;
+    line-height: 3.5rem;
+    color: #000000;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px gray;
+    padding-top: 2px;
+}
+
+.logo {
+    display: inline-block;
+    color: #000000;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 1px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-left: 20px;
+    float: left;
+    color: #000000;
+}
+
+.back-button svg {
+    height: 56px;
+    float: left;
+}
+
+.text-button {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    color: #d58b71;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
