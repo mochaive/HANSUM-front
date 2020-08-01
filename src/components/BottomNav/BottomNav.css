@@ -5,7 +5,7 @@
     bottom: 0;
     background-color: #ffffff;
     height: 3.5rem;
-    box-shadow: 0px 0px 5px gray;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
 }
 
 .menu-item {
