@@ -1,0 +1,41 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-name {
+    display: inline-block;
+    font-family: "NanumSquare", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #d58b71;
+}
+
+.button-login-google {
+    margin-top: 200px;
+    width: 80vw;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    outline: 0;
+}
+
+.button-login-google-logo {
+    padding-left: 5%;
+    width: 23px;
+    height: 23px;
+}
+
+.button-login-google-text {
+    padding-left: 25%;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #000000;
+    font-size: 13px;
+}
