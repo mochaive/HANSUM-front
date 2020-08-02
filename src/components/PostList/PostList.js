@@ -8,7 +8,6 @@ const getPosts = async () => {
     return response.data
 }
 
-let cnt = 0
 const PostList = () => {
     const [posts, setPosts] = useState([])
     useEffect(() => {
@@ -22,7 +21,7 @@ const PostList = () => {
         <div className="list">
             {posts.map((post, index) => (
                 <PostCard
-                    key={post._id}
+                    key={index}
                     Likes={post.likes}
                     Content={post.content}
                     Author={post.author}

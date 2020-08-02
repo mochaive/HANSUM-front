@@ -6,16 +6,21 @@ import AssessmentIcon from "@material-ui/icons/Assessment"
 import AccountCircleIcon from "@material-ui/icons/AccountCircle"
 
 const MenuItem = ({ children, to }) => (
-    <NavLink to={to} className="menu-item" activeClassName="menu-item active">
+    <NavLink
+        exact
+        to={to}
+        className="menu-item"
+        activeClassName="menu-item active"
+    >
         {children}
     </NavLink>
 )
 
-const BottomNav = (props, context) => {
+const BottomNav = () => {
     return (
         <div>
             <div className="menu">
-                <MenuItem to={"/home"}>
+                <MenuItem to={"/"}>
                     <HomeIcon />
                 </MenuItem>
                 <MenuItem to={"/rank"}>
