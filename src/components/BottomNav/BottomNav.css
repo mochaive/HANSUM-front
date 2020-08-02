@@ -10,7 +10,7 @@
 
 .menu-item {
     display: inline-block;
-    color: #000000;
+    color: #999999;
     font-size: 1rem;
     line-height: 3.5rem;
     width: 33.3333%;
@@ -22,7 +22,7 @@
 
 .menu-item svg {
     height: 56px;
-    color: #000000;
+    color: #999999;
 }
 
 .menu-item:hover {

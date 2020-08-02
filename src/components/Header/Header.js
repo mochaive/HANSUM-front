@@ -3,7 +3,7 @@ import "./Header.css"
 import ArrowBackIcon from "@material-ui/icons/ArrowBack"
 
 const Header = ({ type }) => {
-    if (type == "Home") {
+    if (type === "Home") {
         return (
             <div>
                 <div className="status-bar">
