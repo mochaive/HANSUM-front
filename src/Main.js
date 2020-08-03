@@ -9,20 +9,25 @@ import User from "./containers/User"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
 
-const checkUser = async () => {
-    const response = await axios.get(`http://localhost:3001/routes/auth/check`)
+const getUser = async (uid) => {
+    const response = await axios.get(
+        `http://localhost:3001/routes/users/${uid}`
+    )
     return response.data
 }
 
-const Main = ({ match }) => {
+const Main = ({ location, match }) => {
+    const [success, setSuccess] = useState(true)
+
     useEffect(() => {
-        checkUser().then((data) => {
-            console.log("uid: " + data.uid)
-            localStorage.setItem("uid", data.uid)
+        getUser(localStorage.getItem("uid")).then((data) => {
+            if (!data.uid) {
+                setSuccess(false)
+            }
         })
     }, [])
 
-    if (localStorage.getItem("uid") == "null") {
+    if (!success) {
         return (
             <div>
                 <Switch>

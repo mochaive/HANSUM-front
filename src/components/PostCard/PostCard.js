@@ -15,7 +15,7 @@ const PostCard = ({ key, Likes, Author, Content }) => {
     const [user, setUser] = useState(0)
     useEffect(() => {
         getUser(Author).then((user) => {
-            console.log(user)
+            // console.log(user)
             setUser(user)
         })
     }, [])

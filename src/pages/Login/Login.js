@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React from "react"
 import "./Login.css"
 
 const Login = () => {
@@ -13,6 +13,7 @@ const Login = () => {
                 <img
                     className="button-login-google-logo"
                     src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                    alt="User Profile"
                 />
                 <span className="button-login-google-text">
                     구글로 시작하기

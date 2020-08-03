@@ -2,7 +2,11 @@ import React from "react"
 import "./Header.css"
 import ArrowBackIcon from "@material-ui/icons/ArrowBack"
 
-const Header = ({ type }) => {
+const Header = ({ type, history, onClick }) => {
+    const onClickBack = () => {
+        history.goBack()
+    }
+
     if (type === "Home") {
         return (
             <div>
@@ -15,6 +19,22 @@ const Header = ({ type }) => {
                     </div>
                     <div className="logo">HANSUM</div>
                     <div className="text-button">글쓰기</div>
+                </div>
+            </div>
+        )
+    } else if (type === "Register") {
+        return (
+            <div>
+                <div className="status-bar-register">
+                    <div className="back-button" onClick={onClickBack}>
+                        <ArrowBackIcon />
+                    </div>
+                    <div className="logo" style={{ visibility: "hidden" }}>
+                        HANSUM
+                    </div>
+                    <div className="text-button" onClick={onClick}>
+                        완료
+                    </div>
                 </div>
             </div>
         )

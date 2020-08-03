@@ -1,3 +1,60 @@
-.temp {
+.container-register {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-register-content {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-register-content-name {
+    margin-top: 6rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.text-info {
     color: #000000;
+    font-family: "NanumSquare", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 550;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.text-info-accent {
+    color: #d58b71;
+}
+
+.profile-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-size: contain;
+    box-shadow: 0 3px 13px rgba(213, 139, 113, 0.3);
+}
+
+.input-name {
+    width: 100%;
+    padding: 4px 2px;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #d58b71;
+    border-left: none;
+    margin: 5px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+}
+
+input:focus {
+    outline: none;
 }
