@@ -78,6 +78,22 @@ const Header = ({ type, history, onClick }) => {
                 </div>
             </div>
         )
+    } else if (type === "EditUser") {
+        return (
+            <div>
+                <div className="status-bar-register">
+                    <div className="back-button" onClick={onClickBack}>
+                        <ArrowBackIcon />
+                    </div>
+                    <div className="logo" style={{ visibility: "visible" }}>
+                        프로필 수정
+                    </div>
+                    <div className="text-button" onClick={onClick}>
+                        완료
+                    </div>
+                </div>
+            </div>
+        )
     }
 }
 export default Header
