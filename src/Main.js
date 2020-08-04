@@ -8,6 +8,7 @@ import Rank from "./containers/Rank"
 import User from "./containers/User"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
+import { indigo } from "@material-ui/core/colors"
 
 const getUser = async (uid) => {
     const response = await axios.get(
@@ -20,6 +21,10 @@ const Main = ({ location, match }) => {
     const [success, setSuccess] = useState(true)
 
     useEffect(() => {
+        if (location.hash) {
+            const uid = location.hash.substring(1, location.hash.length)
+            localStorage.setItem("uid", uid)
+        }
         getUser(localStorage.getItem("uid")).then((data) => {
             if (!data.uid) {
                 setSuccess(false)
@@ -33,11 +38,7 @@ const Main = ({ location, match }) => {
                 <Switch>
                     <Route exact path="/auth" component={Login} />
                     <Route path="/auth/register" component={Register} />
-                    <Route
-                        exact
-                        path="/"
-                        render={() => <Redirect to="/auth" />}
-                    />
+                    <Route path="/" render={() => <Redirect to="/auth" />} />
                 </Switch>
             </div>
         )

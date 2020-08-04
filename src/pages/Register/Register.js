@@ -89,7 +89,7 @@ const Register = ({ location, history }) => {
                 </div>
                 <div className="container-register-content">
                     <label for="image-url">
-                        <img
+                        <div
                             id="profile-image"
                             className="profile-image"
                             alt="User Profile"
