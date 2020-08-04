@@ -48,7 +48,7 @@ const User = ({ match, history }) => {
             <div class="hr"></div>
             <div
                 className="setting-button"
-                onClick={() => history.push("/setting")}
+                onClick={() => history.push("/others/edit")}
             >
                 프로필 수정
             </div>
