@@ -42,6 +42,26 @@ const Header = ({ type, history, onClick }) => {
                 </div>
             </div>
         )
+    } else if (type === "User") {
+        return (
+            <div>
+                <div className="status-bar">
+                    <div
+                        className="back-button"
+                        style={{ visibility: "hidden" }}
+                    >
+                        <ArrowBackIcon />
+                    </div>
+                    <div className="logo">마이페이지</div>
+                    <div
+                        className="text-button"
+                        style={{ visibility: "hidden" }}
+                    >
+                        글쓰기
+                    </div>
+                </div>
+            </div>
+        )
     } else if (type === "Register") {
         return (
             <div>
