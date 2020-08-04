@@ -23,8 +23,6 @@ const EditUser = ({ history }) => {
             document.getElementById("input-user-name").value = data.userName
         })
     }, [])
-    // user 정보 받아서 넣어놓기
-    // user 정보 업데이트 하기
 
     const onClickSuccess = () => {
         const patchData = {
