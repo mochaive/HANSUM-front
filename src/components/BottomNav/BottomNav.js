@@ -19,7 +19,7 @@ const MenuItem = ({ children, to }) => (
 const BottomNav = () => {
     return (
         <div>
-            <div className="menu">
+            <div className="menu" style={{ visibility: "none" }}>
                 <MenuItem to={"/"}>
                     <HomeIcon />
                 </MenuItem>
