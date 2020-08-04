@@ -8,27 +8,62 @@ const getPosts = async () => {
     return response.data
 }
 
-const PostList = () => {
+const getPostsByRank = async () => {
+    const response = await axios.get(
+        `http://localhost:3001/routes/posts/ranking`
+    )
+    return response.data
+}
+
+const PostList = ({ type, history }) => {
     const [posts, setPosts] = useState([])
     useEffect(() => {
-        getPosts().then((posts) => {
-            setPosts(posts)
-            console.log(posts)
-        })
+        if (type === "Home") {
+            getPosts().then((posts) => {
+                setPosts(posts)
+            })
+        } else if (type === "Rank") {
+            getPostsByRank().then((posts) => {
+                setPosts(posts)
+            })
+        }
     }, [])
 
-    return (
-        <div className="list">
-            {posts.map((post, index) => (
-                <PostCard
-                    key={index}
-                    Likes={post.likes}
-                    Content={post.content}
-                    Author={post.author}
-                />
-            ))}
-        </div>
-    )
+    if (type === "Home") {
+        return (
+            <div className="list">
+                {posts.map((post, index) => (
+                    <PostCard
+                        _id={post._id}
+                        key={index}
+                        Color={post.color}
+                        Likes={post.likes}
+                        Content={post.content}
+                        Author={post.author}
+                        type={type}
+                        history={history}
+                    />
+                ))}
+            </div>
+        )
+    } else {
+        return (
+            <div className="list-rank">
+                {posts.map((post, index) => (
+                    <PostCard
+                        _id={post._id}
+                        key={index}
+                        Color={post.color}
+                        Likes={post.likes}
+                        Content={post.content}
+                        Author={post.author}
+                        type={type}
+                        history={history}
+                    />
+                ))}
+            </div>
+        )
+    }
 }
 
 export default PostList
