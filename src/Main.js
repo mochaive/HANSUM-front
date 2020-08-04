@@ -8,7 +8,7 @@ import Rank from "./containers/Rank"
 import User from "./containers/User"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
-import { indigo } from "@material-ui/core/colors"
+import EditUser from "./pages/EditUser"
 
 const getUser = async (uid) => {
     const response = await axios.get(
@@ -50,7 +50,7 @@ const Main = ({ location, match }) => {
                 <Route path="/rank" component={Rank} />
                 <Switch>
                     <Route path="/user/:uid" component={User} />
-                    <Route path="/user" component={User} />
+                    <Route exact path="/user" component={User} />
                 </Switch>
             </div>
         )
@@ -61,7 +61,7 @@ const Main = ({ location, match }) => {
                 <Route path="/rank" component={Rank} />
                 <Switch>
                     <Route path="/user/:uid" component={User} />
-                    <Route path="/user" component={User} />
+                    <Route exact path="/user" component={User} />
                 </Switch>
             </div>
         )
