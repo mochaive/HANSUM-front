@@ -3,7 +3,8 @@
     border-radius: 10px;
     background-color: #ffffff;
     display: flex;
-    box-shadow: 0 0 10px rgba(213, 139, 113, 0.2);
+    border: 0.5px solid #999999;
+    box-shadow: 0 0 7px #ffffff;
     margin-bottom: 25px;
 }
 

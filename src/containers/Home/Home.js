@@ -3,11 +3,11 @@ import React from "react"
 import Header from "../../components/Header"
 import PostList from "../../components/PostList"
 
-const Home = () => {
+const Home = ({ history }) => {
     return (
         <div>
             <Header type="Home" />
-            <PostList />
+            <PostList type="Home" history={history} />
         </div>
     )
 }
