@@ -28,9 +28,9 @@ const User = ({ match, history }) => {
     return (
         <div>
             <Header type="User" />
-            <div className="container-user">
+            <div className="container-user-main">
                 <div className="my-info-row">
-                    <img className="my-info-profile" src={user.imageUrl} />
+                    <img className="my-info-profile-user" src={user.imageUrl} />
                     <div className="my-info-col">
                         <div className="my-info-name">{user.userName}</div>
                     </div>

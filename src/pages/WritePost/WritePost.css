@@ -1,0 +1,214 @@
+.container-write-post {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contents {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 3.5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-contents-time {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+.container-contents-textarea {
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+}
+
+.container-contents-color {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+a {
+    color: black;
+}
+
+.complete {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13.5px;
+    margin: 0;
+    color: #d58b71;
+}
+
+a:hover {
+    color: #752771;
+}
+
+h6 {
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+h5 {
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+span {
+    font-weight: 600;
+    color: #d58b71;
+}
+
+.md-form {
+    margin: 0px 10px 0px 10px;
+    color: #d58b71;
+    border-bottom-color: #d58b71;
+}
+
+.md-form > label {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13.5px;
+    font-weight: 300;
+    color: #777777;
+}
+
+.md-form input[type="text"] {
+    border-bottom-color: #d58b71;
+}
+
+.md-form input[type="text"]:focus {
+    box-shadow: 0 1px 0 0 #d58b71 !important;
+    color: black;
+    border-bottom: 1px solid #d58b71 !important;
+}
+
+.md-form
+    input[type="text"]:not(.browser-default):focus:not([readonly])
+    + label {
+    color: #752771;
+}
+.fas {
+    padding-right: 6.17px;
+}
+
+.btn {
+    margin: 0;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: gainsboro;
+    color: white;
+    box-shadow: none;
+    font-size: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+}
+.btn:hover {
+    margin: 0;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: gainsboro;
+    color: white;
+    box-shadow: none;
+    font-size: 10px;
+}
+.btn-group {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.btn-group > .btn:not(:first-child) {
+    margin: 0;
+}
+.btn-right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.btn-left {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.btn:not([disabled]):not(.disabled).active {
+    background-color: #d58b71;
+    color: white;
+    box-shadow: none;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    border: 0px;
+    width: 100%;
+    text-align-last: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+.select-form {
+    margin-top: 15px;
+}
+.divider {
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+textarea {
+    border: none;
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    outline: none;
+}
+.complete {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13.5px;
+    margin: 0;
+    color: #d58b71;
+}
+.colorPicker {
+    border: 1px solid #999;
+}
+
+.css-2b097c-container {
+    width: 100px;
+}
+
+.css-1wa3eu0-placeholder {
+    font-family: "NanumSquare", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}

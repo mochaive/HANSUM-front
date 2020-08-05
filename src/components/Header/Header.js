@@ -18,7 +18,9 @@ const Header = ({ type, history, onClick }) => {
                         <ArrowBackIcon />
                     </div>
                     <div className="logo">HANSUM</div>
-                    <div className="text-button">글쓰기</div>
+                    <div className="text-button" onClick={onClick}>
+                        글쓰기
+                    </div>
                 </div>
             </div>
         )
@@ -87,6 +89,22 @@ const Header = ({ type, history, onClick }) => {
                     </div>
                     <div className="logo" style={{ visibility: "visible" }}>
                         프로필 수정
+                    </div>
+                    <div className="text-button" onClick={onClick}>
+                        완료
+                    </div>
+                </div>
+            </div>
+        )
+    } else if (type === "WritePost") {
+        return (
+            <div>
+                <div className="status-bar-register">
+                    <div className="back-button" onClick={onClickBack}>
+                        <ArrowBackIcon />
+                    </div>
+                    <div className="logo" style={{ visibility: "visible" }}>
+                        글쓰기
                     </div>
                     <div className="text-button" onClick={onClick}>
                         완료
